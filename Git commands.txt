@@ -12,7 +12,7 @@ Git push commands
 
 -git remote add origin https://github.com/proboog/WebAppAssignment.git
 
--git push -f origin master
+-git push origin master
 
 Git pull commands
 
