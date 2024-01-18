@@ -1,0 +1,21 @@
+Git push commands
+
+-git init
+
+-git status
+
+-git add .
+
+-git status
+
+-git commit -m "message here"
+
+-git remote add origin https://github.com/proboog/WebAppAssignment.git
+
+-git push -f origin master
+
+Git pull commands
+
+-git init
+
+-git pull https://github.com/proboog/WebAppAssignment.git
