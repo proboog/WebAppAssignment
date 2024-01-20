@@ -11,9 +11,15 @@
   <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
     <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
     <a href="#" class="w3-bar-item w3-button w3-theme-l1">Logo</a>
+<<<<<<< HEAD
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Log in</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Sign up</a>
+=======
+    <a href="home" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
+    <a href="login" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Log in</a>
+    <a href="register" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Sign up</a>
+>>>>>>> 919a85aba9431a7c2484e93a5e2df379890c9179
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
   </div>
 </div>
