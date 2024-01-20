@@ -27,7 +27,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
     <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
     <a href="#" class="w3-bar-item w3-button w3-theme-l1">Logo</a>
     <a href="home" class="w3-bar-item w3-button w3-theme-l1">About</a>
-    <a href="login" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Log in</a>
+    <a href="login_test" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Log in</a>
     <a href="register" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Sign up</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
   </div>
