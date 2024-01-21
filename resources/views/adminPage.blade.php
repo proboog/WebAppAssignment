@@ -20,6 +20,20 @@
       padding: 20px;
       background-color: #343a40;
       color: #ffffff;
+      position: relative;
+    }
+
+    .logout-button {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      background-color: #343a40;
+      color: #ffffff;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none; /* Remove default underline for anchor element */
     }
 
     .centered-content {
@@ -62,6 +76,23 @@
 
 <div class="header">
   <h1 class="w3-text-teal">Admin Page</h1>
+  
+  <!-- Logout button with popup -->
+  <a href="#" onclick="confirmLogout()" class="logout-button">Logout</a>
+
+  <!-- Logout form -->
+  <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+    @csrf
+  </form>
+
+  <!-- JavaScript for the confirmation popup -->
+  <script>
+    function confirmLogout() {
+      if (confirm('Are you sure you want to logout?')) {
+        document.getElementById('logout-form').submit();
+      }
+    }
+  </script>
 </div>
 
 <div class="centered-content">
@@ -108,5 +139,6 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>
