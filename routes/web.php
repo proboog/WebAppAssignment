@@ -28,4 +28,4 @@ Route::get('createEvent', function () {
 
 Route::get('/adminPage', function () {
     return view('adminPage');
-});
+}); 
