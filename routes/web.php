@@ -36,3 +36,7 @@ Route::get('/adminPage', function () {
 });
 
 // Route::post('/createEvent', 'EventController@storeEvent')->name('storeEvent');
+
+Route::get('/eventManage', function () {
+    return view('eventManage'); 
+});
