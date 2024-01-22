@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\EventController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,6 +22,13 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('createEvent', function () {
-    return view('createEvent');
-});
+// Route::get('createEvent', function () {
+//     return view('createEvent');
+// });
+
+Route::get('/createEvent', [EventController::class, 'create'])->name('createEvent');
+
+// Route::post('/storeEvent', [EventController::class, 'storeEvent'])->name('storeEvent');
+Route::post('/createEvent', [EventController::class, 'storeEvent'])->name('storeEvent');
+
+// Route::post('/createEvent', 'EventController@storeEvent')->name('storeEvent');
