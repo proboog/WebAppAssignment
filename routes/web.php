@@ -31,4 +31,8 @@ Route::get('/createEvent', [EventController::class, 'create'])->name('createEven
 // Route::post('/storeEvent', [EventController::class, 'storeEvent'])->name('storeEvent');
 Route::post('/createEvent', [EventController::class, 'storeEvent'])->name('storeEvent');
 
+Route::get('/adminPage', function () {
+    return view('adminPage');
+});
+
 // Route::post('/createEvent', 'EventController@storeEvent')->name('storeEvent');

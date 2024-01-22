@@ -23,19 +23,6 @@ class EventController extends Controller
     //Store new event in database
     public function storeEvent()
     {
-        // echo $request;
-        
-         //Validate the request data
-        //  $validatedData = $request->validate([
-        //  'Event_name' => 'required',
-        //  'Event_description' => 'required',
-        //  'Type_of_event' => 'required',
-        // 'Date_and_time' => 'required',
-        //  'Venue' => 'required',
-        //  'Organizer_name' => 'required',
-        // 'Contact' => 'required',
-        //  // Add more validation rules as needed
-        // ]);
         $events = new Events();
 
         $events -> Event_name = request('Event_name');
