@@ -1,10 +1,3 @@
-Don't forget ENV and Vendor file.
-
-Vendor File:https://www.mediafire.com/file/9pwllyv7tnpkmp1/vendor.zip/file
-
-ENV File:https://www.mediafire.com/file/f8ys6h4fcf5yrog/env.rar/file
-
-
 These are the steps to run the program after cloning the project.
 
 Open terminal and type : 
@@ -17,3 +10,10 @@ Open terminal and type :
 After that, type this :
 
 1. php artisan migrate  - to update the database
+
+
+To change branch,use this command:
+git checkout branchname
+
+To pull:
+git pull link
