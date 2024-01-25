@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminPageController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EventController;
 
@@ -33,6 +34,5 @@ Route::post('/createEvent', [EventController::class, 'storeEvent'])->name('store
 
 Route::get('/adminPage', function () {
     return view('adminPage');
-});
-
+})->name('adminPage');
 // Route::post('/createEvent', 'EventController@storeEvent')->name('storeEvent');
