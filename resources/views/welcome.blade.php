@@ -84,7 +84,7 @@
                     Passion: We love what we do, and it shows in the events we create. Our passion for event planning is the driving force behind our success.
 
                     Make your next event extraordinary with The Events. Let's create memories together!</p>
-                <a class="w3-bar-item w3-button w3-hover-black" href="#">Join event</a>
+                <a class="w3-bar-item w3-button w3-hover-black" href="{{ route('joinEvent') }}">Join event</a>
                 <a class="w3-bar-item w3-button w3-hover-black" href="{{ route('createEvent') }}">Host event</a>
             </div>
             <div class="w3-third w3-container">

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EventController;
+use App\Http\Controllers\JoinEventController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,5 +35,10 @@ Route::post('/createEvent', [EventController::class, 'storeEvent'])->name('store
 Route::get('/adminPage', function () {
     return view('adminPage');
 });
+// Route::get('/joinEvent', function () {
+//     return view('joinEvent');
+// });
+
+Route::get('/joinEvent', [JoinEventController::class, 'joinEvent'])->name('joinEvent');
 
 // Route::post('/createEvent', 'EventController@storeEvent')->name('storeEvent');
