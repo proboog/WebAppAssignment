@@ -65,7 +65,6 @@
                 <label>Action:</label>
                 <select class="w3-select" name="action">
                     <option value="delete">Delete</option>
-                    <option value="edit">Edit Description</option>
                 </select>
             </p>
 
