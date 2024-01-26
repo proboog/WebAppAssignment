@@ -42,3 +42,7 @@ Route::get('/adminPage', function () {
 Route::get('/joinEvent', [JoinEventController::class, 'joinEvent'])->name('joinEvent');
 
 // Route::post('/createEvent', 'EventController@storeEvent')->name('storeEvent');
+
+Route::get('/eventManage', function () {
+    return view('eventManage'); 
+});
