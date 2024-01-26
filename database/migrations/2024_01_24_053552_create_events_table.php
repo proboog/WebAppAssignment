@@ -17,7 +17,11 @@ return new class extends Migration
             $table->string('Event_description');
             $table->string('Type_of_event');
             $table->string('Date_and_time');
-            $table->string('Venue');
+            $table->string('Address');
+            $table->string('City');
+            $table->string('State_Province');
+            $table->integer('Zip_Postal_Code');
+            $table->string('Country');
             $table->string('Organizer_name');
             $table->string('Contact');
             $table->timestamps();

@@ -258,8 +258,8 @@
                     <input type="text" placeholder="Address" name = "Address" id="location-input"/>
                     <input type="text" placeholder="City" name = "City" id="locality-input"/>
                 <div class="half-input-container">
-                    <input type="text" class="half-input" placeholder="State/Province" name = "Province" id="administrative_area_level_1-input"/>
-                    <input type="text" class="half-input" placeholder="Zip/Postal code"  name = "Postal Code" id="postal_code-input"/>
+                    <input type="text" class="half-input" placeholder="State/Province" name = "State_Province" id="administrative_area_level_1-input"/>
+                    <input type="text" class="half-input" placeholder="Zip/Postal Code"  name = "Zip_Postal_Code" id="postal_code-input"/>
                 </div>
                     <input type="text" placeholder="Country"  name = "Country" id="country-input"/>
                 </div>

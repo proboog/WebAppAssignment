@@ -32,8 +32,8 @@ table {
 td, th {
   border: 1px solid #dddddd;
   text-align: left;
-  padding: 8px;
-  padding-right: 150px;
+  padding: 3px;
+  padding-right: 50px;
   border-width:8px;
 }
 
@@ -80,7 +80,11 @@ s
       <th>Event Details</th>
       <th>Type Of Event</th>
       <th>Date</th>
-      <th>Venue</th>
+      <th>Address</th>
+      <th>City</th>
+      <th>State/Province</th>
+      <th>Zip/Postal Code</th>
+      <th>Country</th>
       <th>Organizer</th>
       <th>Contact</th>
       <th></th>
@@ -91,7 +95,11 @@ s
       <td>{{$events['Event_description']}}</td>
       <td>{{$events['Type_of_event']}}</td>
       <td>{{$events['Date_and_time']}}</td>
-      <td>{{$events['Venue']}}</td>
+      <td>{{$events['Address']}}</td>
+      <td>{{$events['City']}}</td>
+      <td>{{$events['State_Province']}}</td>
+      <td>{{$events['Zip_Postal_Code']}}</td>
+      <td>{{$events['Country']}}</td>
       <td>{{$events['Organizer_name']}}</td>
       <td>{{$events['Contact']}}</td>
       <td><button type = "button" name="join">Join Event </button></td>
