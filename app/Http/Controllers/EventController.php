@@ -29,7 +29,11 @@ class EventController extends Controller
         $events -> Event_description = request('Event_description');
         $events -> Type_of_event = request('Type_of_event');
         $events -> Date_and_time = request('Date_and_time');
-        $events -> Venue = request('Venue');
+        $events -> Venue = request('Address');
+        $events -> Venue = request('City');
+        $events -> Venue = request('Province');
+        $events -> Venue = request('Postal Code');
+        $events -> Venue = request('Country');
         $events -> Organizer_name = request('Organizer_name');
         $events -> Contact = request('Contact');
         
