@@ -2,12 +2,11 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Events extends Model
 {
-    use HasFactory;
+    protected $primaryKey = 'Event_ID';
     public $timestamps = false;
 
     protected $fillable = [
@@ -20,5 +19,4 @@ class Events extends Model
         'Organizer_name',
         'Contact'
     ];
-
 }

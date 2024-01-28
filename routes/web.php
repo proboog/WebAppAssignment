@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\JoinEventController;
+use App\Http\Controllers\EventManageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -43,6 +44,9 @@ Route::get('/joinEvent', [JoinEventController::class, 'joinEvent'])->name('joinE
 
 // Route::post('/createEvent', 'EventController@storeEvent')->name('storeEvent');
 
-Route::get('/eventManage', function () {
-    return view('eventManage'); 
-});
+//Route::get('/eventManage', function () {
+//    return view('eventManage'); 
+//});
+
+Route::get('/eventManage', [EventManageController::class, 'eventManage'])->name('eventManage');
+Route::delete('/deleteEvent/{id}', [EventManageController::class, 'deleteEvent'])->name('deleteEvent');

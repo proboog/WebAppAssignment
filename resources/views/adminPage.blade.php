@@ -103,21 +103,16 @@
           <div class="sidebar-sticky">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link active" href="#">
-                  Dashboard
+                <a class="nav-link" href="/eventManage">
+                  Event Manage
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Create Event
-                </a>
-              </li>
+              <!-- Add more menu items as needed -->
               <li class="nav-item">
                 <a class="nav-link" href="#">
                   Customer List
                 </a>
               </li>
-              <!-- Add more menu items as needed -->
               <li class="nav-item">
                 <a class="nav-link" href="#">
                   Analytics
