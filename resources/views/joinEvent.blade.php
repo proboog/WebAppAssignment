@@ -53,13 +53,21 @@ join-button {
         <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
             <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
             <a href="#" class="w3-bar-item w3-button w3-theme-l1">Logo</a>
-            <a href="/" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
+            <a href="/" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Home</a>
+            <a href="createEvent" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Host Event</a>
+            @if(auth()->check())
+            
+            @else 
             <a href="{{ route('login') }}" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Log in</a>
-            @if (Route::has('register'))
             <a href="{{ route('register') }}" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Sign up</a>
+            @endif
+            @if(auth()->check())
+            <a href="home"class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-right">{{ Auth::user()->name }}</a>
+            @else 
             @endif
 
             <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+
         </div>
     </div>
 
@@ -102,11 +110,6 @@ s
     
     @endforeach
   </table>
-
-  <footer id="myFooter">
-    <div class="w3-container w3-theme-l2 w3-padding-32">
-      <h4>Footer</h4>
-    </div>
 
 <!-- END MAIN -->
 </div>

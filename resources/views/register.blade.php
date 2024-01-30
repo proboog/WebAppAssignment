@@ -13,7 +13,6 @@
     <a href="#" class="w3-bar-item w3-button w3-theme-l1">Logo</a>
     <a href="home" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
     <a href="login_test" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Log in</a>
-    <a href="register" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Sign up</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
   </div>
 </div>
