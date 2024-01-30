@@ -3,12 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\JoinEventController;
-<<<<<<< HEAD
 use App\Http\Controllers\EventManageController;
-=======
-use App\Http\Controllers\JoinEventInfoController;
-
->>>>>>> origin/HarithN
 
 /*
 |--------------------------------------------------------------------------
