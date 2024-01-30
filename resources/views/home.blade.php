@@ -92,9 +92,10 @@
             <div class="username-container">
                 <p>{{ Auth::user()->name }}</p>
             </div>
-            <div class="homepage-container">
-            <a href="/" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Home</a>
-            </div>
+            <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+            <a href="/" class="w3-bar-item w3-button w3-theme-l1">
+                <img src="/images/image.png" alt="Logo" style="max-width: 100px; height: auto;">
+            </a>
             <button class="logout-button" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                 Logout
             </button>
