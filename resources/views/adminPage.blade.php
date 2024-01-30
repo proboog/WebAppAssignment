@@ -110,7 +110,7 @@
               <!-- Add more menu items as needed -->
               <li class="nav-item">
                 <a class="nav-link" href="/userManage">
-                  Customer List
+                  Delete User
                 </a>
               </li>
               <li class="nav-item">

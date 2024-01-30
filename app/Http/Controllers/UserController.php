@@ -9,7 +9,8 @@ class UserController extends Controller
 {
     public function userManage()
     {
-        $users = User::all();
+        // Fetch only users with the user_type 'user'
+        $users = User::where('user_type', 'user')->get();
         return view('userManage', ['users' => $users]);
     }
 
@@ -26,3 +27,4 @@ class UserController extends Controller
         return redirect()->route('userManage')->with('success', 'User deleted successfully');
     }
 }
+
