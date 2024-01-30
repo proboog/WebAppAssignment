@@ -82,15 +82,8 @@ s
     <tr>
       <th>Event Name</th>
       <th>Event Details</th>
-      <th>Type Of Event</th>
       <th>Date</th>
-      <th>Address</th>
-      <th>City</th>
-      <th>State/Province</th>
-      <th>Zip/Postal Code</th>
-      <th>Country</th>
       <th>Organizer</th>
-      <th>Contact</th>
       <th></th>
     </tr>
     @foreach($events as $events)
@@ -98,15 +91,8 @@ s
       <tr>
         <td>{{$events['Event_name']}}</td>
         <td>{{$events['Event_description']}}</td>
-        <td>{{$events['Type_of_event']}}</td>
         <td>{{$events['Date_and_time']}}</td>
-        <td>{{$events['Address']}}</td>
-        <td>{{$events['City']}}</td>
-        <td>{{$events['State_Province']}}</td>
-        <td>{{$events['Zip_Postal_Code']}}</td>
-        <td>{{$events['Country']}}</td>
         <td>{{$events['Organizer_name']}}</td>
-        <td>{{$events['Contact']}}</td>
         <td>
           <input type="hidden" name="eventId" value="{{ $events->Event_ID }}">
           <button class = "join-button" type = "submit" name="join">{{ __('Join Event') }} </button>

@@ -95,9 +95,13 @@
     @endif
     <div class="container">
         <h1>Event Information</h1>
-        <p>hi <br>this is the event:</p>
-        <p>Event ID: {{ $events->Event_ID }}</p>
-        <p>User ID:{{ Auth::user()->id }}</p>
+        <p>Hi,this is the event details:</p>
+        <p>Event Details: {{ $events->Event_description }}</p>
+        <p>Event Details: {{ $events->Event_description }}</p>
+        <p>Event Type: {{ $events->Type_of_event }}</p>
+        <p>Event Date & Time: {{ $events->Date_and_time}}</p>
+        <p>Event Address: {{$events->City}}, {{$events->State_Province}}, {{$events->Country}}, {{$events->Zip_Postal_Code}}</p>
+        <p>Host Contact: {{ $events->Contact}}</p>
         
         <div class="button-container">
             <form method="POST" action="{{ route('saveUsers2Events') }}">
