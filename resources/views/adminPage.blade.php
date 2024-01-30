@@ -109,7 +109,7 @@
               </li>
               <!-- Add more menu items as needed -->
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/userManage">
                   Customer List
                 </a>
               </li>

@@ -44,7 +44,7 @@ class EventController extends Controller
         // Retrieve the Event_ID after saving the event
         // Simultaneously creating event n user table 
         $eventID = $events->Event_ID;
-        $userId = Auth::user()->id;
+        $userId = Auth::user()->user_id;
         $events_n_users = new EventsNUsers();
 
         $events_n_users->Event_ID = $eventID; // Assign the Event_ID

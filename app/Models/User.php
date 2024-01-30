@@ -48,4 +48,7 @@ class User extends Authenticatable
     {
         return $this->belongsToMany(Events::class, 'events_n_users','user_id', 'Event_ID');
     }
+
+     // Specify the primary key
+     protected $primaryKey = 'user_id';
 }

@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\JoinEventController;
 use App\Http\Controllers\EventManageController;
+use App\Http\Controllers\JoinEventInfoController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -40,7 +42,7 @@ Route::post('/createEvent', [EventController::class, 'storeEvent'])->name('store
 
 Route::get('/adminPage', function () {
     return view('adminPage');
-});
+})->name('adminPage');
 // Route::get('/joinEvent', function () {
 //     return view('joinEvent');
 // });
@@ -55,3 +57,6 @@ Route::get('/joinEvent', [JoinEventController::class, 'joinEvent'])->name('joinE
 
 Route::get('/eventManage', [EventManageController::class, 'eventManage'])->name('eventManage');
 Route::delete('/deleteEvent/{id}', [EventManageController::class, 'deleteEvent'])->name('deleteEvent');
+
+Route::get('/userManage', [UserController::class, 'userManage'])->name('userManage');
+Route::delete('/deleteUser/{id}', [UserController::class, 'deleteUser'])->name('deleteUser');
