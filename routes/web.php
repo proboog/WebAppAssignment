@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\JoinEventController;
+use App\Http\Controllers\JoinEventInfoController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -20,6 +22,11 @@ Route::get('/', function () {
 });
 
 Auth::routes();
+
+Route::get('/joinEventInfo', [JoinEventInfoController::class, 'joinEventInfo'])->name('joinEventInfo');
+
+Route::post('/saveUsers2Events', [JoinEventInfoController::class, 'saveUsers2Events'])->name('saveUsers2Events');
+
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
