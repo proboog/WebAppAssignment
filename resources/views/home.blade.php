@@ -116,6 +116,19 @@
 
         <div class="data-label">Date Joined</div>
         <div class="data-value">{{ Auth::user()->created_at }}</div>
+
+        <div class="data-label">Joined Events</div>
+        <div class="data-value">
+            @if($joinedEvents->count() > 0)
+                <ul>
+                    @foreach($joinedEvents as $event)
+                        <li>{{ $event->Event_name }}</li>
+                    @endforeach
+                </ul>
+            @else
+                <p>No joined events</p>
+            @endif
+        </div>
     </div>
 
     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">

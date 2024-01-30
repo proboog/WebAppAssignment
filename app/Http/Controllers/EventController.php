@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Events;
+use App\Models\EventsNUsers;
+use Illuminate\Support\Facades\Auth; // Add this line
 
 class EventController extends Controller
 {
@@ -38,6 +40,21 @@ class EventController extends Controller
         $events -> Contact = request('Contact');
         
         $events ->save();
+
+        // Retrieve the Event_ID after saving the event
+        // Simultaneously creating event n user table 
+        $eventID = $events->Event_ID;
+        $userId = Auth::user()->id;
+        $events_n_users = new EventsNUsers();
+
+        $events_n_users->Event_ID = $eventID; // Assign the Event_ID
+        // $events_n_users -> Event_name = request('Event_name');
+        $events_n_users -> user_id = $userId;
+
+
+        $events_n_users ->save();
+
+
         //Create and save the event
         // $event = Event::create($validatedData);
 

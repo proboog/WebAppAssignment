@@ -40,6 +40,10 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
+
+join-button {
+  cursor: pointer;
+}
 </style>
 </head>
 <body>
@@ -90,20 +94,26 @@ s
       <th></th>
     </tr>
     @foreach($events as $events)
-    <tr>
-      <td>{{$events['Event_name']}}</td>
-      <td>{{$events['Event_description']}}</td>
-      <td>{{$events['Type_of_event']}}</td>
-      <td>{{$events['Date_and_time']}}</td>
-      <td>{{$events['Address']}}</td>
-      <td>{{$events['City']}}</td>
-      <td>{{$events['State_Province']}}</td>
-      <td>{{$events['Zip_Postal_Code']}}</td>
-      <td>{{$events['Country']}}</td>
-      <td>{{$events['Organizer_name']}}</td>
-      <td>{{$events['Contact']}}</td>
-      <td><button type = "button" name="join">Join Event </button></td>
-    </tr>
+    <form method="GET" action="{{ route('joinEventInfo') }}">
+      <tr>
+        <td>{{$events['Event_name']}}</td>
+        <td>{{$events['Event_description']}}</td>
+        <td>{{$events['Type_of_event']}}</td>
+        <td>{{$events['Date_and_time']}}</td>
+        <td>{{$events['Address']}}</td>
+        <td>{{$events['City']}}</td>
+        <td>{{$events['State_Province']}}</td>
+        <td>{{$events['Zip_Postal_Code']}}</td>
+        <td>{{$events['Country']}}</td>
+        <td>{{$events['Organizer_name']}}</td>
+        <td>{{$events['Contact']}}</td>
+        <td>
+          <input type="hidden" name="eventId" value="{{ $events->Event_ID }}">
+          <button class = "join-button" type = "submit" name="join">{{ __('Join Event') }} </button>
+        </td>
+      </tr>
+    </form>
+    
     @endforeach
   </table>
 
