@@ -14,6 +14,11 @@ class Events extends Model
         'Event_description',
         'Type_of_event',
         'Date_and_time',
+        'Address',
+        'City',
+        'State_Province',
+        'Zip_Postal_Code',
+        'Country',
         'Venue',
         'Organizer_name',
         'Contact'

@@ -102,6 +102,12 @@
                     <a class="w3-bar-item w3-button w3-hover-black" href="{{ Auth::check() ? route('joinEvent') : route('login') }}">Join event</a>
 
                     <a class="w3-bar-item w3-button w3-hover-black" href="{{ Auth::check() ? route('createEvent') : route('login') }}">Host event</a>
+                    @if(auth()->check())
+                    <a class="w3-bar-item w3-button w3-hover-black" href="{{ route('editEvent') }}">Edit Event</a>
+                    @else
+
+                    @endif
+                    
             </div>
             <div class="w3-third w3-container">
                 <p class="w3-border w3-padding-large w3-padding-32 w3-center"><img src='images\birthday1.jpg' style="width:100%"></p>

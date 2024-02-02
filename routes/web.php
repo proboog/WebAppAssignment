@@ -60,3 +60,8 @@ Route::delete('/deleteEvent/{id}', [EventManageController::class, 'deleteEvent']
 
 Route::get('/userManage', [UserController::class, 'userManage'])->name('userManage');
 Route::delete('/deleteUser/{id}', [UserController::class, 'deleteUser'])->name('deleteUser');
+
+Route::get('/editEvent', [EventController::class, 'editEvent'])->name('editEvent');
+Route::get('/editEventForm/{id}', [EventController::class, 'displayEditEventForm'])->name('editEventForm');
+Route::post('/editEventForm/{id}', [EventController::class, 'updateEvent'])->name('updateEvent');
+Route::get('/easter', [EventController::class, 'showsysmessage'])->name('debug_msg');

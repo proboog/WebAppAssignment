@@ -104,7 +104,7 @@
             <ul class="nav flex-column">
               <li class="nav-item">
                 <a class="nav-link" href="/eventManage">
-                  Event Manage
+                  Delete Event
                 </a>
               </li>
               <!-- Add more menu items as needed -->

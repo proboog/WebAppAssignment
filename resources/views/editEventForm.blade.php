@@ -227,18 +227,19 @@
             </a>
             <a href="/" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Home</a>
             <a href="joinEvent" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Join Event</a>
+            <a href="createEvent" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Host Event</a>
             <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
             <a href="home"class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-right">{{ Auth::user()->name }}</a>
         </div>
     </div>
 
 <header class="w3-container w3-teal w3-padding-top-32">
-    <h1>Create Event</h1>
+    <h1>Update Event</h1>
 </header>
 
 <div class="w3-container w3-half w3-margin-top">
 
-    <form action="{{ route('storeEvent')}}" class="w3-container w3-card-4" method="POST" onsubmit="return validateForm()">
+    <form action="{{ route('updateEvent', ['id' => $event->Event_ID]) }}" class="w3-container w3-card-4" method="POST" onsubmit="return validateForm()">
         @csrf
         <p>
             <input class="w3-input" type="text" name="Event_name" style="width:90%" required>
@@ -299,7 +300,7 @@
         </p>
 
         <p>
-            <button class="w3-button w3-section w3-teal w3-ripple" type="submit">Create event</button>
+            <button class="w3-button w3-section w3-teal w3-ripple" type="submit">Update event</button>
         </p>
     </form>
 
